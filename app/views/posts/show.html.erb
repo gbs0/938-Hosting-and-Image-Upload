@@ -1,6 +1,6 @@
-<% if @post.photo.attached? %>
+<% if @post.photos.attached? %>
 <div class=""
-  style="height: 30vh; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @post.photo.key, height: 300, crop: :fill %>')"
+  style="height: 30vh; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @post.photos.first.key, height: 300, crop: :fill %>')"
 >
 </div>
 <% end %>
