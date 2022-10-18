@@ -28,6 +28,10 @@
       </div>
     <% end %>
 
+    <div class="mb-3">
+      <%= form.file_field :photo, as: :file, style: "width: 100%;", input_html: { multiple: true }%>
+    </div>
+
     <%= form.submit class: 'btn btn-primary' %>
     
     <% if post.persisted? %>

@@ -27,6 +27,8 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
+gem "cloudinary"
+
 # Gem for translations
 gem "i18n"
 
